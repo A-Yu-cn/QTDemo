@@ -77,6 +77,7 @@ class Example(QMainWindow):
         font, ok = QFontDialog.getFont()
         if ok:
             self.lbl.setFont(font)
+            self.lbl.adjustSize()
 
     def showDialogFile(self):
 
